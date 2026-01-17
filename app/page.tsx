@@ -31,7 +31,7 @@ export default function HomePage() {
             </nav>
 
 
-            <section className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mt-16">
+            <section className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
 
 
                 <div>
@@ -66,28 +66,28 @@ export default function HomePage() {
                 </div>
 
 
-                <div className="relative">
-                    <img
+                <div className="">
+                   <div className={'relative'}>
+                      <img
                         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
                         className="rounded-3xl w-full object-cover"
                     />
 
 
-                    <div className="absolute top-4 right-4 bg-white rounded-xl px-4 py-3 shadow text-sm">
+                    <div className="absolute top-[-35] right-0 bg-white rounded-xl px-4 py-3 shadow-lg border border-gray-200 text-sm">
                         <p className="text-gray-500">5000+ RATINGS</p>
                         <p className="font-semibold text-[#163020]">
                             See Our Latest Project
                         </p>
                     </div>
-                </div>
-            </section>
-
-
-            <section className="max-w-7xl mx-auto px-6 mt-20 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+                   </div>
+                  <section className="grid grid-cols-2 md:grid-cols-4 gap-10 text-center pt-8">
                 <Stat value="450+" label="Projects Done" />
                 <Stat value="1.5k+" label="Active Users" />
                 <Stat value="850+" label="Lives Impacted" />
                 <Stat value="10k+" label="Satisfied Clients" />
+            </section>
+                </div>
             </section>
 
         </main>
@@ -99,8 +99,6 @@ function Stat({ value, label }: { value: string; label: string }) {
         <div>
             <p className="text-2xl font-bold text-[#163020]">{value}</p>
             <p className="text-gray-600 text-sm mt-1">{label}</p>
-
-
         </div>
 
     )
